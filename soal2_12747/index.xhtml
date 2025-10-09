@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<xhtml xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Reservation Hotel Room</title>
@@ -16,13 +16,10 @@
                 <input type="text" name="name" size="30" />
             </p>
             <p>2. Gender<br />
-                <input type="radio" name="gender" id="male" value="Male" />
-                <label for="male">Male</label>
-                <input type="radio" name="gender" id="female" value="Female" />
-                <label for="female">Female</label>
+                <input type="text" name="gender" size="30" />
             </p>
             <p>3. Email Address<br />
-                <input type="email" name="email" size="30" />
+                <input type="text" name="email" size="30" />
             </p>
             <p>4. Trip Number<br />
                 <input type="text" name="tripnum" size="30" />
@@ -35,7 +32,7 @@
                 <input type="text" name="resname" size="30" />
             </p>
             <p>2. Booking Date<br />
-                <input type="date" name="bookdate" />
+                <input type="text" name="bookdate" size="30" />
             </p>
             <p>3. Room Type<br />
                 <select name="roomtype">
@@ -63,10 +60,10 @@
         <fieldset>
             <legend><strong>Payment</strong></legend>
             <p>1. Check in Date<br />
-                <input type="date" name="checkin" />
+                <input type="text" name="checkin" size="30" />
             </p>
             <p>2. Check out Date<br />
-                <input type="date" name="checkout" />
+                <input type="text" name="checkout" size="30" />
             </p>
             <p>3. Payment Method<br />
                 <select name="paymethod">
@@ -80,4 +77,4 @@
         <p><input type="submit" value="Submit" /></p>
     </form>
 </body>
-</xhtml>
+</html>
