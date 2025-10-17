@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Reservation Hotel Room</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet" />
+
+  <style type="text/css">
+    body {
+      font-family: 'Lato', 'Segoe UI', Tahoma, sans-serif;
+      background: linear-gradient(135deg, #e7cba2, #f3dfb7);
+      margin: 0;
+      padding: 40px;
+      color: #3e2f21;
+    }
+
+    h3 {
+      text-align: center;
+      color: #4a2e1e;
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 28px;
+      margin-bottom: 30px;
+      letter-spacing: 0.8px;
+    }
+
+    form {
+      max-width: 700px;
+      margin: auto;
+      background: #fff8ee;
+      padding: 25px 40px;
+      border-radius: 14px;
+      box-shadow: 0 0 16px rgba(80, 60, 40, 0.15);
+      border: 1px solid #d5b88c;
+    }
+
+    fieldset {
+      border: 1.8px solid #b38b60;
+      border-radius: 10px;
+      margin-bottom: 22px;
+      padding: 22px 30px;
+      background-color: #fff6e7;
+    }
+
+    legend {
+      font-weight: bold;
+      font-size: 17px;
+      color: #4b3525;
+      padding: 0 8px;
+      background-color: #f5e0b8;
+      border-radius: 6px;
+    }
+
+    p {
+      margin: 12px 0;
+      font-weight: 500;
+      color: #4b3525;
+    }
+
+    input[type="text"], select {
+      width: 94%;
+      padding: 8px 10px;
+      border: 1.5px solid #b9935a;
+      border-radius: 6px;
+      font-size: 14px;
+      margin-top: 5px;
+      background-color: #fffcf7;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    input[type="text"]:focus, select:focus {
+      border-color: #9a754d;
+      box-shadow: 0 0 6px rgba(154, 117, 77, 0.4);
+      outline: none;
+    }
+
+    input[type="radio"] {
+      margin-right: 6px;
+    }
+
+    label {
+      margin-right: 10px;
+    }
+
+    input[type="submit"] {
+      display: block;
+      width: 160px;
+      background-color: #a67846;
+      border: none;
+      padding: 10px;
+      font-size: 15px;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      margin: 14px auto;
+      transition: background-color 0.2s ease, transform 0.1s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #8b6235;
+      transform: translateY(-1px);
+    }
+
+    input[type="submit"]:active {
+      transform: translateY(1px);
+    }
+  </style>
+</head>
+
+<body>
+  <h3>Reservation Hotel Room</h3>
+
+  <form action="" method="post">
+    <fieldset>
+      <legend>Personal Data</legend>
+      <p>1. Name<br />
+        <input type="text" name="name" size="30" />
+      </p>
+      <p>2. Gender<br />
+        <input type="text" name="gender" size="30" />
+      </p>
+      <p>3. Email Address<br />
+        <input type="text" name="email" size="30" />
+      </p>
+      <p>4. Trip Number<br />
+        <input type="text" name="tripnum" size="30" />
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Reservation Room Form</legend>
+      <p>1. Reservation Name<br />
+        <input type="text" name="resname" size="30" />
+      </p>
+      <p>2. Booking Date<br />
+        <input type="text" name="bookdate" size="30" />
+      </p>
+      <p>3. Room Type<br />
+        <select name="roomtype">
+          <option>Deluxe</option>
+          <option>Suite</option>
+          <option>Standard</option>
+        </select>
+      </p>
+      <p>4. Bed Type<br />
+        <select name="bedtype">
+          <option>Single Bed</option>
+          <option>Double Bed</option>
+          <option>King Size Bed</option>
+          <option>Twin Bed</option>
+        </select>
+      </p>
+      <p>5. Breakfast<br />
+        <input type="radio" name="breakfast" id="with" value="With" />
+        <label for="with">With Breakfast</label>
+        <input type="radio" name="breakfast" id="without" value="Without" />
+        <label for="without">Without Breakfast</label>
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Payment</legend>
+      <p>1. Check in Date<br />
+        <input type="text" name="checkin" size="30" />
+      </p>
+      <p>2. Check out Date<br />
+        <input type="text" name="checkout" size="30" />
+      </p>
+      <p>3. Payment Method<br />
+        <select name="paymethod">
+          <option>Cash</option>
+          <option>Credit Card</option>
+          <option>Debit</option>
+        </select>
+      </p>
+    </fieldset>
+
+    <p style="text-align:center;"><input type="submit" value="Submit" /></p>
+  </form>
+</body>
+</html>
